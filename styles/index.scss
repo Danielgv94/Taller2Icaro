@@ -1,0 +1,57 @@
+@import "./variables.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+h1 {
+  background: $color1;
+  color: white;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+a {
+  color: $color1;
+  text-decoration: none;
+  font-size: 15px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0 15%;
+}
+img {
+  border: red;
+}
+
+@media only screen and (min-width: 700px) {
+  h1 {
+    justify-content: flex-start;
+    background-color: white;
+    color: $color1;
+    font-size: 35px;
+  }
+  ul {
+    justify-content: flex-end;
+    align-items: baseline;
+    gap: 20px;
+    margin: 0 0%;
+    padding: 0 5px;
+    background-color: $color1;
+    color: white;
+  }
+  a {
+    font-size: 20px;
+    color: white;
+  }
+}
