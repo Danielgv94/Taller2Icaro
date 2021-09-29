@@ -11,6 +11,58 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
 
+.title {
+  text-align: center;
+  color: red;
+}
+
+.ListaPokemones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 100px 1fr;
+      grid-template-columns: 1fr 100px 1fr;
+  max-width: 100%;
+  margin: auto;
+}
+
+.pokemon {
+  border: 1px solid red;
+  padding: 10px;
+  background: yellow;
+  text-align: center;
+}
+
+.Vs {
+  text-align: center;
+  margin: auto;
+  font-size: 32px;
+}
+
+.boton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: red;
+}
+
+img {
+  width: 100%;
+}
+
 h1 {
   background: #030000;
   color: white;
@@ -43,6 +95,72 @@ ul {
 
 img {
   border: red;
+}
+
+h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: red;
+  font-size: 24px;
+}
+
+.containerbuscar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+input {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input[type="text"] {
+  background: red;
+  width: 300px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+
+.footer {
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #474441;
+  margin-top: 2px;
+  padding: 10px 10px;
+  gap: 20%;
+}
+
+.footer a {
+  color: white;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: start;
+}
+
+br {
+  font-size: 20px;
+  color: #68b2ca;
+}
+
+.menu2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media only screen and (min-width: 700px) {

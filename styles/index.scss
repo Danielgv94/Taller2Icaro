@@ -10,6 +10,50 @@
 body {
   font-family: "Libre Franklin", sans-serif;
 }
+.title {
+  text-align: center;
+  color: red;
+}
+.ListaPokemones {
+  display: grid;
+  grid-template-columns: 1fr 100px 1fr;
+  max-width: 100%;
+  margin: auto;
+}
+.pokemon {
+  border: 1px solid red;
+  padding: 10px;
+
+  background: yellow;
+  text-align: center;
+}
+.Vs {
+  text-align: center;
+  margin: auto;
+  font-size: 32px;
+}
+.boton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.boton:hover {
+  background-color: red;
+}
+
+img {
+  width: 100%;
+}
 
 h1 {
   background: $color1;
@@ -32,6 +76,56 @@ ul {
 }
 img {
   border: red;
+}
+h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: red;
+  font-size: 24px;
+}
+
+.containerbuscar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  transform: translate(-50%, -50%);
+}
+input {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  transition: 0.5s;
+}
+input[type="text"] {
+  background: red;
+  width: 300px;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+
+.footer {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: $color5;
+  margin-top: 2px;
+  padding: 10px 10px;
+  gap: 20%;
+  a {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-self: start;
+  }
+}
+br {
+  font-size: 20px;
+  color: #68b2ca;
+}
+.menu2 {
+  display: flex;
 }
 
 @media only screen and (min-width: 700px) {
