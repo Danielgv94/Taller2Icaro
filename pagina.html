@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <script src="./script/pagina.js"></script>
-
-
-
+    
+    
+    
     <header>
       <h1>GAMEDAY</h1>
       <nav>
+        <div class="menuhome">
         <ul>
           <li></li><a href="#">Home</a></li>
           <li><a href="./Pokemones.html">Pokemones</a></li>
@@ -22,54 +22,63 @@
           <li><a href="./Contacto.html">Contacto</a></li>
         </ul>
       </nav>
-      <img
-        src="./imagenes/imagen1.jpg"
-        alt="imagen de juegos"
-        style="max-width: 100%; width: auto; height: auto"
-      />
- 
-      <form class="containerbuscar"> 
-        <h2>Search</h2>
-        <input type="text" name="" placeholder="Type...">
-        <input type="submit" name="" value="Search">
-              </form>
+    </div> 
+      <!-- <img
+      src="./imagenes/imagen1.jpg"
+      alt="imagen de juegos"
+      style="max-width: 100%; width: auto; height: auto"
+      /> -->
+      
+      <div class="containerbuscar">       
+        <h2>POKEBOLA</h2>
+        <input type="text" name="" placeholder="Escribe un Pokemon" id="searchpokemon">
+        <button id="buttonpokemon">
+          Buscar
+        </button>
+        <div class="buscarlist" id="buscarpokemon">
+          <div class="lspokemos" id="lspokemon1">
+            <img src="" alt="" id="imagenespoke" />
+            <p id="pokenombre"> </p>
+          </div>
+        </div>
+      </div>
+      
+      
     </header>    
     
     <footer class="footer">
       <div>      
         By Daniel Velandia -Derechos reservados<br />
-      <div class= "final">
-        <a href="https://www.linkedin.com/in/daniel-velandia-0047231a5/"
-        >Quiero saber mas   
-      </a> 
-      <div class="verticalLine">
-        <a href="https://consultoria.anexia.es/Portals/2/privacidad.JPG"> </a>
-      </div>
-      </div>
-
-       
-        
-      </div>
-              
-      </div>
-
-      <div>
-        <b>COMPANY </b><br />
-        Redes <br />
-        About us <br />
-        Call us
-      </div>
+        <div class= "final">
+          <a href="https://www.linkedin.com/in/daniel-velandia-0047231a5/"
+          >Quiero saber mas   
+        </a> 
+        <div class="verticalLine">
+          <a href="https://consultoria.anexia.es/Portals/2/privacidad.JPG"> </a>
+        </div>
+      </div>     
       
+    </div>    
+  </div>
+  
+  <div>
+    <b>COMPANY </b><br />
+    Redes <br />
+    About us <br />
+    Call us
+  </div>
       
-<div class="logo">
-  <a href="./imagenes/charmander.jpg"></a>
+  
+  <div class="logo">
+    <a href="./imagenes/charmander.jpg"></a>
     <i class="logo" style="position: relative;font-size: 42!important;"> 
     </i>
   </a>
-  </div>
-    </footer>
+</div>
+</footer>
 
 
 
-  </body>
+<script src="./script/pagina.js"></script>
+</body>
 </html>

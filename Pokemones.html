@@ -7,10 +7,24 @@
     <title>Pokemones</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body>
-    <script src="./script/pagina.js"></script>
+  <body
+  class="fondobatalla"
+    background="./imagenes/fondocontacto4.png"
+    style="max-width: 100%; width: auto; height: auto"
+    >
 
-    <h1 class="title">Pelea de Pokemones</h1>
+    <h1 class="title">BATALLA DE POKEMONES</h1>
+
+    <div class="menu2">
+      <ul>
+        <li><a href="./pagina.html">Home</a></li>
+        <li><a href="./Entrenadores.html">Entrenadores</a></li>
+        <li><a href="./Contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+
+
+    <div class="fondopoke">
     <button class="boton" onclick="consultarpokemones()">Nueva Batalla</button>
 
     <div class="ListaPokemones" id="PokemonList">
@@ -18,54 +32,17 @@
         <img src="" alt="" />
         <p></p>
       </div>
+
       <div class="Vs">Vs.</div>
       <div class="pokemon" id="pokemon_2">
         <img src="" alt="" />
         <p></p>
       </div>
     </div>
-    <div class="menu2">
-      <nav>
-        <ul>
-          <li><a href="./pagina.html">Home</a></li>
-          <li><a href="./Entrenadores.html">Entrenadores</a></li>
-          <li><a href="./Contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
+  </div>
+</div>
 
-    <script>
-      let lista = document.getElementById("PokemonList");
 
-      function consultarpokemon(id, num) {
-        fetch(`https://pokeapi.co/api/v2/pokemon/${id}`).then(function (
-          response
-        ) {
-          response.json().then(function (pokemon) {
-            crearPokemon(pokemon, num);
-          });
-        });
-      }
-
-      function consultarpokemones() {
-        let primerID = Math.round(Math.random() * 150);
-        let segundoID = Math.round(Math.random() * 150);
-
-        consultarpokemon(primerID, 1);
-        consultarpokemon(segundoID, 2);
-      }
-      function crearPokemon(pokemon, num) {
-        let item = lista.querySelector(`#pokemon_${num}`);
-        let imagen = item.getElementsByTagName("img")[0];
-        imagen.setAttribute("src", pokemon.sprites.front_default);
-
-        let nombre = item.getElementsByTagName("p")[0];
-        nombre.textContent = pokemon.name;
-      }
-
-      consultarpokemones();
-    </script>
-
-    <header></header>
+    <script src="./script/pokemones.js"></script>
   </body>
 </html>

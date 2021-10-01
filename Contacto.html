@@ -4,32 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Pokemones</title>
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
-  <body>
-    <script src="./script/pagina.js"></script>
-
-    <header>
-      <h1>GAMEDAY</h1>
-      <nav>
-        <ul>
-          <li><a href="./Pokemones.html">Pokemones</a></li>
-          <li><a href="./Entrenadores.html">Entrenadores</a></li>
-          <li><a href="./pagina.html">Home</a></li>
-        </ul>
-      </nav>
-      <img
-        src="./imagenes/imagen1.jpg"
-        alt="imagen de juegos"
-        style="max-width: 100%; width: auto; height: auto"
-      />
-
-      <form class="containerbuscar">
-        <h2>Search</h2>
-        <input type="text" name="" placeholder="Type..." />
-        <input type="submit" name="" value="Search" />
+  <body
+    class="fondocontacto"
+    background="./imagenes/fondocontacto2.png"
+    style="max-width: 100%; width: auto; height: auto"
+  >
+    <h1 class="title">CONTACTO</h1>
+    <div class="menu2">
+      <ul>
+        <li><a href="./pagina.html">Home</a></li>
+        <li><a href="./Entrenadores.html">Entrenadores</a></li>
+        <li><a href="./Contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <section class="formulario1">
+      <h4>Formulario Registro</h4>
+      <form action="formi">
+        <input
+          class="controls"
+          type="text"
+          name="nombrect"
+          id="nombrect"
+          placeholder="Ingrese su Nombre"
+        />
+        <input
+          class="controls"
+          type="text"
+          name="apellidoct"
+          id="apellidoct"
+          placeholder="Ingrese sus Apellidos"
+        />
+        <input
+          class="controls"
+          type="email"
+          name="correoct"
+          id="correoct"
+          placeholder="Ingrese su Correo"
+        /><input
+          class="controls"
+          type="password"
+          name="contrasenact"
+          id="contrasenact"
+          placeholder="Ingrese su Contraseña"
+        />
+        <p>Estoy de acuerdo con <a href="#"> Terminos y Condiciones</a></p>
+        <input
+          class="botonenviar"
+          type="submit"
+          value="Registrar"
+          onclick="myform(this.form)"
+        />
+        <p><a href="#"> ¿Ya tengo Cuenta? </a></p>
       </form>
-    </header>
+    </section>
+
+    <script src="./script/contacto.js"></script>
   </body>
 </html>
